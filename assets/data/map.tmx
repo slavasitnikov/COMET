@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tileset.png" tilewidth="32" tileheight="32">
+  <image source="../tiled/tileset.png" width="192" height="1376"/>
+  <terraintypes>
+   <terrain name="island" tile="-1"/>
+   <terrain name="lake" tile="-1"/>
+  </terraintypes>
+  <tile id="3" terrain=",,,1"/>
+  <tile id="4" terrain=",,1,1"/>
+  <tile id="5" terrain=",,1,"/>
+  <tile id="9" terrain=",1,,1"/>
+  <tile id="10" terrain="1,1,1,1"/>
+  <tile id="11" terrain="1,,1,"/>
+  <tile id="15" terrain=",1,,"/>
+  <tile id="16" terrain="1,1,,"/>
+  <tile id="17" terrain="1,,,"/>
+  <tile id="21" terrain=",,,0"/>
+  <tile id="22" terrain=",,0,0"/>
+  <tile id="23" terrain=",,0,"/>
+  <tile id="27" terrain=",0,,0"/>
+  <tile id="28" terrain="0,0,0,0"/>
+  <tile id="29" terrain="0,,0,"/>
+  <tile id="33" terrain=",0,,"/>
+  <tile id="34" terrain="0,0,,"/>
+  <tile id="35" terrain="0,,,"/>
+ </tileset>
+ <tileset firstgid="259" name="objects" tilewidth="16" tileheight="16">
+  <image source="../tiled/respawn.png" width="16" height="16"/>
+  <tile id="0">
+   <properties>
+    <property name="invisible" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="BG" width="50" height="50">
+  <properties>
+   <property name="nocollide" value="true"/>
+   <property name="tileset" value="tileset.png"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztmbFvT1EUx08ampImpQMGDHQTf4BZDBjKIAY1YJAOdMAgBu2AQQwYxNAY6KCGxoChOjQdxIBBDHTAZMCgBjEI96T35H3f+Z17373vvUab9Cbf/PJ7v/veO597zj3n3vsjWm2rbWnbJqfNK0RbIhxbndatEG3P5DjhNOR1KnLNEvc72YL4HQ+cHjXgOOrU5TUcuWbZfhz6NdE+px6n+8CSwiG28DiccTrrNeJ/t67JfW3ZbnGwHmdwyHjrsY7Fz1CEIbX9L45U+3uUQnaHGt6bwyFxM0LlOa0ViyFtu+bgzwNeu6lz3EXPvWZqcITmeY6GEzhE+z3PQYOhz+u904eaHDhvYy2XI0XIgPqVyIG56rRhX8hu1CAtxmSu7dNUxJDFoDlCLMyBczyX45zTbae3NRhYs1TEkMXww+l7IgfO8RCHZmH7b3mGvgDHHaenAd31fV44vQkwoC9SOFJqmma5Ae965fTSYHhG4fx9j4q4ms/gCDXksHwREnJwTEiOFAbJ0/LsNU5rvbqdntCiT2YpzIAxlbMuyVlfIIeOq3HoJ/YPwDt7qfBJKK40QyqH5YtdVNQrrctO16gzrvZCH85h6413IkcorjCemnAwA9coqVescd/3MJV9gr4QDsnDVRw6rsh//nH63JBDGGLz9jfZMSVxJf3qclg+SeGYomLcNYPYJrHeXcGBe4YcDmyWT1I5YvVqHGzqVRw6XyHLBurcV/P9f/29MY46eZc59DozxvHV6Se8b864B1k2gvrhPsxXbXDE4kTmhnDsoMXYYpYFz2P5RFgmqYizh04TTq+9uM+7ljg+UuHnWLxjrAvLNhgDZgn5VHgmqKjjM1TOu0050BehtRLvAXSsW37RewfLR+KDOSp8EeLAuZ7LYY2r7GUk1oVHWHRshnLAtOebVxy64TO+1OSwfIO5VOdTyaOh54hvxH68bsUUwbW2OHA8xSfiF/FJFUeKNEPbHOKTPU7HqHyWiHmYv+tcfIWKNdhy4GCfXKDOcyHNoX1ynTrXxVUs1ve2OMQm5jhSwYE+uUnldXHIR9r+tjnw+Zc8B8eWnElYHNonwjLqNeZ00XiPxbKUHHjGo+s71+pJKuq3vneQOmsuthBbGxxWEw6ds6aoXDdHqfBBDoMewzY4rHNBaXqOIIfsv847ffIKMcQ49LlPWxy6jiCHnB1g35ifQ3MDr4kvUjg4x1wlO9cji6wpQhwcb+iTHrLHHu3WDKGYSuGQPa3OI/hcXmvJGkKezftDOQeRnKV9UpXPq/JLHQ6d66vyoLXG6lIsdThQdTg0C9esUS/k4zyK9YP/u+6ncg1hFj7//BYQrl+WgkNY2PYx45pcx/qh62CKZM+i9y1aOfuP1PNQrgFydtWUQzPFfJX6/wf+F6t1CDRC5bN5rOc7vbo9Z1OuBVBK/UAbcjXQ8vPqvG+5tJDNq23ltX9w03rU
+  </data>
+ </layer>
+ <layer name="FG" width="50" height="50">
+  <properties>
+   <property name="tileset" value="tileset.png"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztmM0KxDAIhAN7LPT9H3fZQyCIGk3G/LAOeOiyHfM1JrF9SilPRkZg3KbkOEvJcZZWc3yM4dUqDml8vd+tfLvryvrse//byTFaQ5xGOFB1jWL4aWY+kOOYVXJg63tWs+ucY3kxQ3MpYr/6Vw5Ezp0cyJy3cPQ8Rzm0fSo5ZL8aVi9PX0J92rxW7eDQ+ih6D3LvjeDQfGhulKLqSvOJ0EqO1gut1RytJ0pv2cuBYuE4OJ4IjuqLEDcXyeEXeo1o1zXfqRzSukZxWN5lURzcmG/ikPZaiW2mT+x9uxpl0c4LqdZQ88HxjHD0zr1oDsnbI3rWWWuq5kK8f0jemuiz750REX0JrSPk+pAU2V9J6zyyj+d08jnozZccuu9KJYfPN1oSR0YGKr6BQh/B
+  </data>
+ </layer>
+ <objectgroup name="SPAWN_POINTS" width="50" height="50">
+  <object gid="259" x="221" y="216"/>
+  <object gid="259" x="422" y="1247"/>
+  <object gid="259" x="1344" y="1344"/>
+  <object gid="259" x="1344" y="256"/>
+  <object gid="259" x="1088" y="672"/>
+ </objectgroup>
+</map>
